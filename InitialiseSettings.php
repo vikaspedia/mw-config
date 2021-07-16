@@ -5,14 +5,14 @@ $wgConf->settings = [
 	'wgServer' => [
 		// if you want to allow also usage of https, just use '//localhost'
 		// and set 'http://localhost' at 'wgCanonicalServer'
-      'default' => 'https://localhost',
-      'skhsblsb_metawiki' => 'https://meta.vikaspedia.org',
-      'skhsblsb_testwiki' => 'https://test.vikaspedia.org',
-      'skhsblsb_bnwiki' => 'https://bn.vikaspedia.org',
-	    'skhsblsb_commonswiki' => 'https://commons.vikaspedia.org',
-	    'skhsblsb_enwiki' => 'https://en.vikaspedia.org',
-	    'skhsblsb_hiwiki' => 'https://hi.vikaspedia.org',
-	    'skhsblsb_datawiki' => 'https://data.vikaspedia.org',
+		'default' => 'https://localhost',
+		'skhsblsb_metawiki' => 'https://meta.vikaspedia.org',
+		'skhsblsb_testwiki' => 'https://test.vikaspedia.org',
+		'skhsblsb_bnwiki' => 'https://bn.vikaspedia.org',
+		'skhsblsb_commonswiki' => 'https://commons.vikaspedia.org',
+		'skhsblsb_enwiki' => 'https://en.vikaspedia.org',
+		'skhsblsb_hiwiki' => 'https://hi.vikaspedia.org',
+		'skhsblsb_datawiki' => 'https://data.vikaspedia.org',
 		],
 	'wgCanonicalServer' => [
 		'default' => 'https://localhost',
