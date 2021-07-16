@@ -526,6 +526,8 @@ $wgConf->settings = [
 				'hideuser' => true,
 				'suppressionlog' => true,
 				'suppressrevision' => true,
+				'abusefilter-view-private' => true,
+				
 			],
 			'checkuser' => [
 				'browsearchive' => true,
