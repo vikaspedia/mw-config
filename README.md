@@ -1,0 +1,2 @@
+# mw-config
+mediawiki configurations
