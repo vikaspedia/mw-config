@@ -1,2 +1,2 @@
-# mw-config
+# Vikaspedia Wiki Config
 mediawiki configurations
