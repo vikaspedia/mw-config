@@ -431,7 +431,7 @@ $wgConf->settings = [
 			],
 		],
 	],
-		'wgRemoveGroups' => [
+	'wgRemoveGroups' => [
 		'default' => [
 			'bureaucrat' => [
 				'bot',
@@ -443,6 +443,7 @@ $wgConf->settings = [
 				'rollbacker',
 			],
 		],
+	],
 	'+wgGroupPermissions' => [
 		'default' => [
 			'*' => [
