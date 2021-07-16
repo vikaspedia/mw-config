@@ -431,6 +431,18 @@ $wgConf->settings = [
 			],
 		],
 	],
+		'wgRemoveGroups' => [
+		'default' => [
+			'bureaucrat' => [
+				'bot',
+				'sysop',
+			],
+			'sysop' => [
+				'autopatrolled',
+				'confirmed',
+				'rollbacker',
+			],
+		],
 	'+wgGroupPermissions' => [
 		'default' => [
 			'*' => [
