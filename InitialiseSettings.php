@@ -1,5 +1,5 @@
 <?php
-// MediaWiki Central Settings //
+// MediaWiki Central Settings // --
 include('GlobalExtensions.php');
 $wgConf->settings = [
 	'wgServer' => [
