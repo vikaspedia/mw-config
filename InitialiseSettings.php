@@ -416,6 +416,8 @@ $wgConf->settings = [
 			'autoconfirmed', // semi-protection level on
 			'sysop',
 		],
+		'skhsblsb_enwiki' => [ '', 'autoconfirmed', 'sysop' ],
+		
 	],
 	'wgAddGroups' => [
 		'default' => [
@@ -456,6 +458,9 @@ $wgConf->settings = [
 				'noratelimit' => true,
 				'tboverride-account' => true,
 			],
+			'autopatrolled' => [
+				'autopatrol' => true,
+			],
 		],
 		'+skhsblsb_enwiki' => [
 			'editfilltermanager' => [
@@ -481,9 +486,6 @@ $wgConf->settings = [
 				'reupload' => true,
 				'editsemiprotected' => true,
 				'createpagemainns' => true,
-			],
-			'autopatrolled' => [
-				'autopatrol' => true,
 			],
 			'bot' => [
 				'changetags' => true,
