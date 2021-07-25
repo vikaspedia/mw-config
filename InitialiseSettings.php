@@ -433,19 +433,39 @@ $wgConf->settings = [
 			],
 		],
 	],
-	'wgRemoveGroups' => [
-		'default' => [
+	'Skhsblsb_testwiki' => [
 			'bureaucrat' => [
-				'bot',
+				'testgroup',
+				'bureaucrat',
 				'sysop',
-			],
-			'sysop' => [
-				'autopatrolled',
 				'confirmed',
+				'autopatrolled',
+				'rollbacker',
+			],
+			'burcrat' => [
+				'bot',
+				'bureaucrat',
+				'burcart',
+				'exampleuser',
+				'testgroup',
+				'sysop',
+				'confirmed',
+				'autopatrolled',
+				'rollbacker',
+			],
+			'steward' => [
+				'consul',
+				'bot',
+				'bureaucrat',
+				'burcart',
+				'exampleuser',
+				'testgroup',
+				'sysop',
+				'confirmed',
+				'autopatrolled',
 				'rollbacker',
 			],
 		],
-	],
 	'+wgGroupPermissions' => [
 		'default' => [
 			'*' => [
