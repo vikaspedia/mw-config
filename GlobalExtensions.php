@@ -3,18 +3,18 @@ wfLoadExtensions( [
 	'AbuseFilter',
 	'CategoryTree',
 	'CentralAuth',
-	'CentralNotice',
+//	'CentralNotice',
 	'CharInsert',
 	'Cite',
 	'CiteThisPage',
 	'CirrusSearch',
 	'CodeEditor',
-	'ConfirmEdit',
+	'ConfirmEdit', 'ConfirmEdit/FancyCaptcha',
 	'CommonsMetadata',
-	'DismissableSiteNotice',
+//	'DismissableSiteNotice',
 	'Echo',
-	'EventLogging',
-	'EventStreamConfig',
+//	'EventLogging',
+//	'EventStreamConfig',
 	'Elastica',
 	'Gadgets',
 	'GlobalUsage',
@@ -30,7 +30,6 @@ wfLoadExtensions( [
 	'NewUserMessage',
 	'Nuke',
 	'OATHAuth',
-    'MobileFrontend',
 	'ParserFunctions',
 	'PageViewInfo',
 	'Poem',
@@ -49,9 +48,12 @@ wfLoadExtensions( [
 	'TemplateStyles',
 	'UniversalLanguageSelector',
 	'UploadWizard',
+	'FontAwesome',
+    'MobileFrontend',
 	'WikiEditor',] );
 $wgScribuntoDefaultEngine = 'luastandalone';
 $wgScribuntoUseGeSHi = true;
 $wgScribuntoUseCodeEditor = true;
+$wgScribuntoEngineConf['luastandalone']['luaPath'] = '/usr/bin/lua5.1';
 // Ivestigating
 	
