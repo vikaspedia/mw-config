@@ -4,15 +4,15 @@
 $wgWBClientSettings['repoScriptPath'] = '';
 $wgWBClientSettings['repoArticlePath'] = '/wiki/$1';
 $wgWBClientSettings['repoUrl'] = 'https://data.vikaspedia.org';
-$wgWBClientSettings['repositories']['']['repoDatabase'] = 'skhsblsb_datawiki';
-$wgWBClientSettings['repositories']['']['changesDatabase'] = 'skhsblsb_datawiki';
+$wgWBClientSettings['repositories']['']['repoDatabase'] = 'sourklou_datawiki';
+$wgWBClientSettings['repositories']['']['changesDatabase'] = 'sourklou_datawiki';
 $wgWBClientSettings['siteLinkGroups'] = [ 'Wikidata' ];
 $wgWBClientSettings['siteGroup'] = 'Wikidata';
 $wgWBClientSettings['TOOLBAR'] = [ 'Wiki' ];
 $wgWBClientSettings['repoSiteName'] = 'Wikidata';
 $wgWBClientSettings['repositories'] = [
 		'' => [
-			'repoDatabase' => 'skhsblsb_datawiki',
+			'repoDatabase' => 'sourklou_datawiki',
 			'baseUri' => 'https://data.vikaspedia.org' . '/entity',
 			'entityNamespaces' => [
 				'item' => NS_MAIN,
@@ -22,8 +22,8 @@ $wgWBClientSettings['repositories'] = [
 		]
 ];
 $wgWBClientSettings['repoNamespaces'] = [
-	'wikibase-item' => 'Item',
-	'wikibase-property' => 'Property'
+	'wikibase-item' => NS_MAIN,
+	'wikibase-property' => NS_MAIN
 ];
 $wgWBClientSettings['purgeCacheBatchSize'] = 100;
 $wgWBClientSettings['recentChangesBatchSize'] = 100;
