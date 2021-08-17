@@ -16,14 +16,14 @@ $wgWBClientSettings['repositories'] = [
 			'baseUri' => 'https://data.vikaspedia.org' . '/entity',
 			'entityNamespaces' => [
 				'item' => NS_ITEM,
-				'property' => NS_PROPERTY
+				'property' => NS_PROPERTY,
 			],
 			'prefixMapping' => [ '' => '' ],
 		]
 ];
 $wgWBClientSettings['repoNamespaces'] = [
-	'wikibase-item' => NS_ITEM,
-	'wikibase-property' => NS_PROPERTY
+	'wikibase-item' => 'Item',
+	'wikibase-property' => 'Property',
 ];
 $wgWBClientSettings['purgeCacheBatchSize'] = 100;
 $wgWBClientSettings['recentChangesBatchSize'] = 100;
