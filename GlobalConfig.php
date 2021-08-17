@@ -15,8 +15,8 @@ $wgWBClientSettings['repositories'] = [
 			'repoDatabase' => 'sourklou_datawiki',
 			'baseUri' => 'https://data.vikaspedia.org' . '/entity',
 			'entityNamespaces' => [
-				'item' => NS_ITEM,
-				'property' => NS_PROPERTY,
+				'item' => NS_MAIN,
+				'property' => NS_MAIN,
 			],
 			'prefixMapping' => [ '' => '' ],
 		]
