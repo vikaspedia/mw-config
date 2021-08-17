@@ -5,26 +5,30 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
-include('/home/skhsblsb/mediawiki/private.php');
+include('/home/sourklou/mediawiki/private.php');
 $wgShowExceptionDetails = true;
 $wgShowDBErrorBacktrace = true;
 # Choose the right wiki to show
 if ( defined( 'MW_DB' ) ) {
     $wikiId = MW_DB;
-} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'test.vikaspedia.org') {
-    $wikiId = 'testwiki';
-} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'meta.vikaspedia.org') {
-    $wikiId = 'metawiki';
-} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'bn.vikaspedia.org') {
-    $wikiId = 'bnwiki';
-} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'commons.vikaspedia.org') {
-    $wikiId = 'commonswiki';
-} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'en.vikaspedia.org') {
-    $wikiId = 'enwiki';  
-} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'hi.vikaspedia.org') {
-    $wikiId = 'hiwiki';  
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'wiki.vikaspedia.org') {
+    $wikiId = 'wikiwiki';
 } elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'data.vikaspedia.org') {
     $wikiId = 'datawiki';
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'en.vikaspedia.org') {
+    $wikiId = 'enwiki';
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'bn.vikaspedia.org') {
+    $wikiId = 'bnwiki';    
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'hi.vikaspedia.org') {
+    $wikiId = 'hiwiki';    
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'id.vikaspedia.org') {
+    $wikiId = 'idwiki'; 
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'test.vikaspedia.org') {
+    $wikiId = 'testwiki';
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'commons.vikaspedia.org') {
+    $wikiId = 'commonswiki';
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'meta.vikaspedia.org') {
+    $wikiId = 'metawiki';               
 } else {
     echo 'Unable to determine $wikiId'."\n";
     exit(1);
@@ -38,14 +42,15 @@ $wgServer = [
     // if you want to allow also usage of https, just use '//localhost'
     // and set 'http://localhost' at 'wgCanonicalServer'
     'default' => 'https://localhost',
-    'skhsblsb_metawiki' => 'https://meta.vikaspedia.org',
-    'skhsblsb_testwiki' => 'https://test.vikaspedia.org',
-    'skhsblsb_bnwiki' => 'https://bn.vikaspedia.org',
-	'skhsblsb_commonswiki' => 'https://commons.vikaspedia.org',
-	'skhsblsb_enwiki' => 'https://en.vikaspedia.org',
-	'skhsblsb_hiwiki' => 'https://hi.vikaspedia.org',
-	'skhsblsb_datawiki' => 'https://data.vikaspedia.org',
-	
+	'sourklou_wikiwiki' => 'https://wiki.vikaspedia.org',
+	'sourklou_datawiki' => 'https://data.vikaspedia.org',
+	'sourklou_enwiki' => 'https://en.vikaspedia.org',
+	'sourklou_bnwiki' => 'https://bn.vikaspedia.org',
+	'sourklou_hiwiki' => 'https://hi.vikaspedia.org',
+	'sourklou_idwiki' => 'https://id.vikaspedia.org',
+	'sourklou_testwiki' => 'https://test.vikaspedia.org',
+	'sourklou_metawiki' => 'https://meta.vikaspedia.org',
+	'sourklou_commonswiki' => 'https://commons.vikaspedia.org',
 ];
 
 ## The URL path to the logo.  Make sure you change this from the default,
@@ -53,7 +58,7 @@ $wgServer = [
 ## Database settings
 $wgDBtype = "mysql";
 $wgDBserver = "localhost";
-$wgDBname = "skhsblsb_".$wikiId;
+$wgDBname = "sourklou_".$wikiId;
 $wgDBuser = $DBuser;
 $wgDBpassword = $DBpassword;
 # MySQL table options to use during installation or update
@@ -63,14 +68,15 @@ $wgDBTableOptions = "ENGINE=InnoDB, DEFAULT CHARSET=binary";
 $wgDBmysql5 = false;
 # Read wiki lists
 $wgLocalDatabases = array(
-    'skhsblsb_metawiki',
-	'skhsblsb_bnwiki',
-	'skhsblsb_commonswiki',
-    'skhsblsb_testwiki',
-	'skhsblsb_enwiki',
-	'skhsblsb_hiwiki',
-	'skhsblsb_datawiki',
-
+	'sourklou_wikiwiki',
+	'sourklou_datawiki',
+	'sourklou_enwiki',
+	'sourklou_bnwiki',
+	'sourklou_hiwiki',
+	'sourklou_idwiki',
+	'sourklou_testwiki',
+	'sourklou_metawiki',
+	'sourklou_commonswiki',
 );
 
 ## Cache
@@ -78,10 +84,15 @@ $wgMainCacheType = CACHE_ACCEL;
 $wgParserCacheType = CACHE_ACCEL;
 $wgMessageCacheType = CACHE_ACCEL;
 // $wgSessionCacheType = 'redis';
+// $wgDebugLogFile = "error.log";
+$wgParserCacheExpireTime = 2592000;
+$wgResourceLoaderMaxage = array('server' => 30 * 24 * 60 * 60, 'client' => 30 * 24 * 60 * 60);
+$wgEnableSidebarCache = true;
+$wgShowIPinHeader = false;
 
-// require_once( '/home/skhsblsb/mediawiki/LocalExtensions.php' );
+// require_once( '/home/sourklou/mediawiki/LocalExtensions.php' );
 include('LocalConfig.php');
-$wgCentralAuthDatabase = 'skhsblsb_ca';
+$wgCentralAuthDatabase = 'sourklou_ca';
 
 $conf = new SiteConfiguration;
 $wgConf->wikis = $wgLocalDatabases;
