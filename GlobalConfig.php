@@ -15,15 +15,15 @@ $wgWBClientSettings['repositories'] = [
 			'repoDatabase' => 'sourklou_datawiki',
 			'baseUri' => 'https://data.vikaspedia.org' . '/entity',
 			'entityNamespaces' => [
-				'item' => NS_MAIN,
-				'property' => NS_MAIN
+				'item' => NS_ITEM,
+				'property' => NS_PROPERTY
 			],
 			'prefixMapping' => [ '' => '' ],
 		]
 ];
 $wgWBClientSettings['repoNamespaces'] = [
-	'wikibase-item' => NS_MAIN,
-	'wikibase-property' => NS_MAIN
+	'wikibase-item' => NS_ITEM,
+	'wikibase-property' => NS_PROPERTY
 ];
 $wgWBClientSettings['purgeCacheBatchSize'] = 100;
 $wgWBClientSettings['recentChangesBatchSize'] = 100;
