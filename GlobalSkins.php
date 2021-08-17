@@ -1,13 +1,15 @@
 <?php
 wfLoadSkins( [
-    'MonoBook',
+    'Medik',
     'Vector',
-    'Timeless',
-    'MinervaNeue'
+// 'MinervaNeue',
+ 'Medik',
+    
 ] );
 // Choose one of these and add chosen code to bottom of LocalSettings.php file:
+//$wgDefaultSkin
 
 
-//$wgMFDefaultSkinClass = "SkinMinerva";
-//$wgDefaultSkin = 'minerva';
-//$wgMFAutodetectMobileView = true;
+
+
+$wgDefaultSkin = 'Vector';
