@@ -51,6 +51,15 @@ $wgServer = [
 	'sourklou_testwiki' => 'https://test.vikaspedia.org',
 	'sourklou_metawiki' => 'https://meta.vikaspedia.org',
 	'sourklou_commonswiki' => 'https://commons.vikaspedia.org',
+        'sourklou_afwiki' => 'https://af.vikaspedia.org',
+         'sourklou_arwiki' => 'https://ar.vikaspedia.org',
+         'sourklou_astwiki' => 'https://ast.vikaspedia.org',
+         'sourklou_barwiki' => 'https://bar.vikaspedia.org',
+          'sourklou_bewiki' => 'https://be.vikaspedia.org',
+         'sourklou_bgwiki' => 'https://bg.vikaspedia.org',
+          'sourklou_bswiki' => 'https://bs.vikaspedia.org',
+         'sourklou_cawiki' => 'https://ca.vikaspedia.org',
+         'sourklou_loginwiki' => 'https://login.vikaspedia.org',
 ];
 
 ## The URL path to the logo.  Make sure you change this from the default,
@@ -77,6 +86,16 @@ $wgLocalDatabases = array(
 	'sourklou_testwiki',
 	'sourklou_metawiki',
 	'sourklou_commonswiki',
+         'sourklou_afwiki',
+         'sourklou_arwiki',
+         'sourklou_astwiki',
+         'sourklou_barwiki',
+          'sourklou_bewiki',
+         'sourklou_bgwiki',
+          'sourklou_bswiki',
+         'sourklou_cawiki',
+         'sourklou_loginwiki',
+         
 );
 
 ## Cache
