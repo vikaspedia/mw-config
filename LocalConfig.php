@@ -118,6 +118,7 @@ if ( $wikiId == 'datawiki' ) {
 } elseif ( $wikiId == 'metawiki' ) {  
     $wgSecretKey = $wgSecretKeymetawiki;
     $wgUpgradeKey = $wgUpgradeKeymetawiki;
+    wfLoadExtension( 'Translate' );
     // Wikibase
     $wgEnableWikibaseRepo = false;
     $wgEnableWikibaseClient = true;
