@@ -746,6 +746,7 @@ $wgConf->settings = [
 				'createpage' => true,
 			],
 		],
+	],
 	'wgRemoveGroups' => [
 		'default' => [
 			'bureaucrat' => [
