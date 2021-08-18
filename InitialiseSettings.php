@@ -132,7 +132,7 @@ $wgConf->settings = [
 		'default' => 'sourklou_metawiki',
 	],
 	'wgAbuseFilterIsCentral' => [
-		'default' => false,
+		'default' => true,
 		'sourklou_metawiki' => true,
 	],
 	'wgAbuseFilterBlockDuration' => [
