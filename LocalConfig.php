@@ -31,6 +31,15 @@ if ( $wikiId == 'datawiki' ) {
 	'sourklou_testwiki',
 	'sourklou_metawiki',
 	'sourklou_commonswiki',
+        'sourklou_afwiki',
+         'sourklou_arwiki',
+         'sourklou_astwiki',
+         'sourklou_barwiki',
+          'sourklou_bewiki',
+         'sourklou_bgwiki',
+          'sourklou_bswiki',
+         'sourklou_cawiki',
+         'sourklou_loginwiki',
     ];
     $wgLocalDatabases = $wgWBRepoSettings['localClientDatabases'] = [
 	'sourklou_wikiwiki',
@@ -42,6 +51,15 @@ if ( $wikiId == 'datawiki' ) {
 	'sourklou_testwiki',
 	'sourklou_metawiki',
 	'sourklou_commonswiki',
+         'sourklou_afwiki',
+         'sourklou_arwiki',
+         'sourklou_astwiki',
+         'sourklou_barwiki',
+          'sourklou_bewiki',
+         'sourklou_bgwiki',
+          'sourklou_bswiki',
+         'sourklou_cawiki',
+         'sourklou_loginwiki',
     ];
     $wgWBRepoSettings['localClientDatabases'] = [
 	'sourklou_wikiwiki',
@@ -53,6 +71,15 @@ if ( $wikiId == 'datawiki' ) {
 	'sourklou_testwiki',
 	'sourklou_metawiki',
 	'sourklou_commonswiki',
+         'sourklou_afwiki',
+         'sourklou_arwiki',
+         'sourklou_astwiki',
+         'sourklou_barwiki',
+          'sourklou_bewiki',
+         'sourklou_bgwiki',
+          'sourklou_bswiki',
+         'sourklou_cawiki',
+         'sourklou_loginwiki',
     ];
     // /*
     $wgExtraInterlanguageLinkPrefixes = [
@@ -65,6 +92,15 @@ if ( $wikiId == 'datawiki' ) {
 	'sourklou_testwiki',
 	'sourklou_metawiki',
 	'sourklou_commonswiki',
+         'sourklou_afwiki',
+         'sourklou_arwiki',
+         'sourklou_astwiki',
+         'sourklou_barwiki',
+          'sourklou_bewiki',
+         'sourklou_bgwiki',
+          'sourklou_bswiki',
+         'sourklou_cawiki',
+         'sourklou_loginwiki',
 	
     ];
 } elseif ( $wikiId == 'wiki' ) {  
