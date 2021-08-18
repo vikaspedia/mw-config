@@ -172,7 +172,99 @@ if ( $wikiId == 'datawiki' ) {
     $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
     include('/home/sourklou/mediawiki/GlobalConfig.php');
 
+} elseif ( $wikiId == 'commonswiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
+} elseif ( $wikiId == 'afwiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
 
+} elseif ( $wikiId == 'arwiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
+} elseif ( $wikiId == 'astwiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
+} elseif ( $wikiId == 'barwiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
+} elseif ( $wikiId == 'bewiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
+
+} elseif ( $wikiId == 'bgwiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
+} elseif ( $wikiId == 'loginwiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
+
+} elseif ( $wikiId == 'cawiki' ) {  
+    $wgSecretKey = $wgSecretKeyenwiki;
+    $wgUpgradeKey = $wgUpgradeKeyenwiki;
+    // Wikibase
+    $wgEnableWikibaseRepo = false;
+    $wgEnableWikibaseClient = true;
+    require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
+    require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
+    $wgWBClientSettings['siteGlobalID'] = 'hiwiki';
+    include('/home/sourklou/mediawiki/GlobalConfig.php');
 
 } else { #enwiki  
     $wgSecretKey = $wgSecretKeyenwiki;
