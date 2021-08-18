@@ -724,8 +724,8 @@ $wgConf->settings = [
 			],
 		],
 	],
-];
-// Vector
+	
+	// Vector
 	'wgVectorDefaultSkinVersion' => [
 		'default' => '1',
 	],
@@ -747,16 +747,15 @@ $wgConf->settings = [
 			'showDescription' => true,
 		],
 	],	
-
-// Statistics
+	// Statistics
 	'wgArticleCountMethod' => [
 		'default' => 'link',
 	],
-// ReplaceText
+	// ReplaceText
 	'wgReplaceTextResultsLimit' => [
 		'default' => 250,
 	],
-// Page Size
+	// Page Size
 	'wgMaxArticleSize' => [
 		'default' => 2048,
 	],
@@ -765,3 +764,4 @@ $wgConf->settings = [
 	'wgPFEnableStringFunctions' => [
 		'default' => false,
 	],
+];
