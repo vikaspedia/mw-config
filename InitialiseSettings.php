@@ -17,6 +17,15 @@ $wgConf->settings = [
 		'sourklou_testwiki' => 'https://test.vikaspedia.org',
 		'sourklou_metawiki' => 'https://meta.vikaspedia.org',
 		'sourklou_commonswiki' => 'https://commons.vikaspedia.org',
+		'sourklou_afwiki' => 'https://af.vikaspedia.org',
+         'sourklou_arwiki' => 'https://ar.vikaspedia.org',
+         'sourklou_astwiki' => 'https://ast.vikaspedia.org',
+         'sourklou_barwiki' => 'https://bar.vikaspedia.org',
+          'sourklou_bewiki' => 'https://be.vikaspedia.org',
+         'sourklou_bgwiki' => 'https://bg.vikaspedia.org',
+          'sourklou_bswiki' => 'https://bs.vikaspedia.org',
+         'sourklou_cawiki' => 'https://ca.vikaspedia.org',
+         'sourklou_loginwiki' => 'https://login.vikaspedia.org',
 		],
 	'wgCanonicalServer' => [
 		'default' => 'https://localhost',
@@ -29,6 +38,15 @@ $wgConf->settings = [
 		'sourklou_testwiki' => 'https://test.vikaspedia.org',
 		'sourklou_metawiki' => 'https://meta.vikaspedia.org',
 		'sourklou_commonswiki' => 'https://commons.vikaspedia.org',
+		'sourklou_afwiki' => 'https://af.vikaspedia.org',
+         'sourklou_arwiki' => 'https://ar.vikaspedia.org',
+         'sourklou_astwiki' => 'https://ast.vikaspedia.org',
+         'sourklou_barwiki' => 'https://bar.vikaspedia.org',
+          'sourklou_bewiki' => 'https://be.vikaspedia.org',
+         'sourklou_bgwiki' => 'https://bg.vikaspedia.org',
+          'sourklou_bswiki' => 'https://bs.vikaspedia.org',
+         'sourklou_cawiki' => 'https://ca.vikaspedia.org',
+         'sourklou_loginwiki' => 'https://login.vikaspedia.org',
 	],
 	'wgSitename' => [
 		'default' => '',
@@ -124,16 +142,12 @@ $wgConf->settings = [
 			'warn' => true,
 		],
 	],
-	
-	'wgUseGlobalAbuseFilters' => [
-		'default' => true,
-	],
 	'wgAbuseFilterCentralDB' => [
 		'default' => 'sourklou_metawiki',
 	],
 	'wgAbuseFilterIsCentral' => [
-		'default' => true,
-		'sourklou_metawiki' => true,
+		'default' => false,
+		'metawiki' => true,
 	],
 	'wgAbuseFilterBlockDuration' => [
 		'default' => 'indefinte',
@@ -158,8 +172,19 @@ $wgConf->settings = [
 	'wgAbuseFilterPrivateDetailsForceReason' => [
 		'default' => true,
 	],
-	'wgAbuseFilterDefaultWarningMessage' => [
-		'default' => 'abusefilter-warning',
+	'wgAbuseFilterEmergencyDisableThreshold' => [
+		'default' => [
+			'default' => 0.60,
+		],
+	],
+	'wgAbuseFilterEmergencyDisableCount' => [
+		'default' => [
+			'default' => 40,
+		],
+	],
+               // ScratchBlocks
+	'wgScratchBlocks4BlockVersion' => [
+		'default' => 3,
 	],
 	
 		// ConfirmEdit
@@ -178,6 +203,26 @@ $wgConf->settings = [
 
 	'wgCaptchaClass' => [
 		'default' => $wgCaptchaClassFC,
+	],
+
+        //Echo
+        'wgEchoCrossWikiNotifications' => [
+		'default' => true,
+	],
+	'wgEchoUseJobQueue' => [
+		'default' => true,
+	],
+	'wgEchoSharedTrackingCluster' => [
+		'default' => 'echo',
+	],
+	'wgEchoSharedTrackingDB' => [
+		'default' => 'sourklou_metawiki',
+	],
+	'wgEchoUseCrossWikiBetaFeature' => [
+		'default' => true,
+	],
+	'wgEchoMentionStatusNotifications' => [
+		'default' => true,
 	],
 
 	
@@ -205,6 +250,19 @@ $wgConf->settings = [
 		'sourklou_enwiki' => 'https://en.vikaspedia.org/Special:UploadWizard?uselang=$lang',
 	],
 	// Recent Changes
+	'wgFeedLimit' => [
+		'default' => 50,
+	],
+	'wgRCMaxAge' => [
+		'default' => 180 * 24 * 3600,
+	],
+	'wgRCLinkDays' => [
+		'default' => [ 1, 3, 7, 14, 30 ],
+	],
+	'wgRCLinkLimits' => [
+		'default' => [ 50, 100, 250, 500 ],
+	],
+
 	'wgUseRCPatrol' => [
 		'default' => true,
 	],
@@ -212,30 +270,35 @@ $wgConf->settings = [
 		'default' => false,
 	],
 	
+	
 	// Checkuser
-	'wgCUDMaxAge' => [
-		'default' => 7776000, //in seconds (default = 3 months)
-	],
-	'wgCheckUserGBtoollink' => [
-		'centralDB' => 'sourklou_metawiki',
-		'groups' => [ 'steward' ],
-	],
-	'wgCheckUserForceSummary' => [
+         'wgCheckUserForceSummary' => [
 		'default' => true,
-	],
-	'wgCheckUserCIDRLimit' => [ 
-		'IPv4' => 16,
-		'IPv6' => 32
-	],
-	'wgCheckUserCAMultiLock' => [
-		'centralDB' => 'sourklou_metawiki',
-		'groups' => [ 'steward' ]
-	],
-	'wgCheckUserCAtoollink ' => [ 
-		'default' => 'sourklou_metawiki',
 	],
 	'wgCheckUserEnableSpecialInvestigate' => [
 		'default' => true,
+	],
+	'wgCheckUserLogLogins' => [
+		'default' => true,
+	],
+	'wgCheckUserCAtoollink' => [
+		'default' => 'sourklou_metawiki',
+	],
+	'wgCheckUserGBtoollink' => [
+		'default' => [
+			'centralDB' => 'sourklou_metawiki',
+			'groups' => [
+				'steward',
+			],
+		],
+	],
+	'wgCheckUserCAMultiLock' => [
+		'default' => [
+			'centralDB' => 'sourklou_metawiki',
+			'groups' => [
+				'steward',
+			],
+		],
 	],
 
 	// Timezone //
@@ -243,8 +306,11 @@ $wgConf->settings = [
 		'default' => 'UTC',
 	],
 	// CentralAuth // !becarefull
-	'wgCentralAuthDatabase' => [
-		'default' => 'sourklou_ca'
+         'wgCentralAuthAutoCreateWikis' => [
+		'default' => [
+			'sourklou_metawiki',
+			'sourklou_loginwiki',
+		],
 	],
 	'wgCentralAuthAutoNew' => [
 		'default' => true,
@@ -261,30 +327,27 @@ $wgConf->settings = [
 	'wgCentralAuthCookieDomain' => [
 		'default' => '.vikaspedia.org',
 	],
-	'wgCentralAuthCreateOnView' => [
-		'default' =>  true,
+	'wgCentralAuthDatabase' => [
+		'default' => 'sourklou_ca',
 	],
-	
 	'wgCentralAuthEnableGlobalRenameRequest' => [
-		'default' =>  true,
+		'default' => false,
+		'sourklou_metawiki' => true,
 	],
-
 	'wgCentralAuthEnableUserMerge' => [
-		'default' =>  true,
+		'default' => false,
+		'sourklou_metawiki' => true,
 	],
-	
-	'wgCentralAuthLoginIcon' => [
+	'wgCentralAuthLoginWiki' => [
+		'default' => 'sourklou_loginwiki',
+	],
+	'wgCentralAuthPreventUnattached' => [
 		'default' => true,
 	],
-
 	'wgCentralAuthSilentLogin' => [
-		'default' =>  true,
+		'default' => true,
 	],
-	'wgCentralAuthAutoCreateWikis' => [
-		'default' => [
-			'sourklou_metawiki',
-		],
-	],
+	
 		// Interwiki //
 	'wgInterwikiCentralDB' => [
 		'default' => 'sourklou_metawiki',
@@ -293,17 +356,14 @@ $wgConf->settings = [
 		'default' => '$lang',
 	], 
 		// Global Blocking //
-	'wgGlobalBlockingDatabase' => [
-		'default' =>  'sourklou_ca',
-	],
-	'wgGlobalBlockingBlockXFF' => [
-		'default' =>  true,
-	],
-	'wgApplyGlobalBlocks' => [
-                'metawiki' => false,
+		'wgApplyGlobalBlocks' => [
 		'default' => true,
 		'sourklou_metawiki' => false,
 	],
+	'wgGlobalBlockingDatabase' => [
+		'default' => 'sourklou_ca', // use mhglobal for global blocks
+	],
+	
 		// GlobalUsage //
 	'wgGlobalUsageDatabase' => [
 		'default' => 'sourklou_enwiki',
@@ -419,7 +479,7 @@ $wgConf->settings = [
  		'default' => [
  			'poweredby' => [
  				'vikaspedia' => [
- 					'src' => "https://en.vikaspedia.org/images/8/8e/Vikaspedia.jpg",
+ 					'src' => "https://commons.vikaspedia.org/images/8/8e/Vikaspedia.jpg",
  					'url' => 'https://en.vikaspedia.org/wiki/Vikaspedia',
  					'alt' => 'vikaspedia Wiki '
  				]
@@ -470,6 +530,7 @@ $wgConf->settings = [
 	'wgEnotifImpersonal' => [
 		'default' => true,
 	],
+
 	// Scribunto //
 	// Scribunto
 	'wgCodeEditorEnableCore' => [
@@ -596,9 +657,8 @@ $wgConf->settings = [
 				'editfilterhelper',
 				'editfilltermanager' ,
 				'filemover', 
-				'ipblockexempt',
-				'accountcreator',
-				'author',
+				'ipblockexempt' ,
+				'accountcreator' ,
 			],
 		],
 	],
@@ -608,29 +668,6 @@ $wgConf->settings = [
 				'abusefilter-log' => true,
 				'abusefilter-log-detail' => true,
 				'abusefilter-view' => true,
-			],
-			'author' => [
-				'edit' => true,
-				'movefile' => true,
-				'move' => true,
-				'move-subpages' => true,
-				'upload' => true,
-				'reupload' => true,
-				'createpage' => true,
-			],
-			'sysop' => [
-				'edit' => true,
-				'movefile' => true,
-				'move' => true,
-				'move-subpages' => true,
-				'upload' => true,
-				'reupload' => true,
-				'createpage' => true,
-			],
-			'accountcreator' => [
-				'override-antispoof' => true,
-				'noratelimit' => true,
-				'tboverride-account' => true,
 			],
 			'accountcreator' => [
 				'override-antispoof' => true,
@@ -731,22 +768,7 @@ $wgConf->settings = [
 			],
 		],
 	],
-	'wgRevokePermissions' => [
-		'default' => [
-			'*' => [
-				'edit' => true,
-			],
-			'user' => [
-				'edit' => true,
-				'movefile' => true,
-				'move' => true,
-				'move-subpages' => true,
-				'upload' => true,
-				'reupload' => true,
-				'createpage' => true,
-			],
-		],
-	'wgRemoveGroups' => [
+'wgRemoveGroups' => [
 		'default' => [
 			'bureaucrat' => [
 				'bot',
