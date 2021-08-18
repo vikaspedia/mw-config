@@ -243,8 +243,11 @@ $wgConf->settings = [
 		'default' => 'UTC',
 	],
 	// CentralAuth // !becarefull
-	'wgCentralAuthDatabase' => [
-		'default' => 'sourklou_ca'
+	'wgCentralAuthAutoCreateWikis' => [
+		'default' => [
+			'loginwiki',
+			'metawiki',
+		],
 	],
 	'wgCentralAuthAutoNew' => [
 		'default' => true,
@@ -257,34 +260,28 @@ $wgConf->settings = [
 	],
 	'wgCentralAuthCookies' => [
 		'default' => true,
+	],	
+	'wgCentralAuthDatabase' => [
+		'default' => 'sourklou_ca',
 	],
-	'wgCentralAuthCookieDomain' => [
-		'default' => '.vikaspedia.org',
-	],
-	'wgCentralAuthCreateOnView' => [
-		'default' =>  true,
-	],
-	
 	'wgCentralAuthEnableGlobalRenameRequest' => [
-		'default' =>  true,
+		'default' => false,
+		'metawiki' => true,
 	],
-
 	'wgCentralAuthEnableUserMerge' => [
-		'default' =>  true,
+		'default' => false,
+		'metawiki' => true,
 	],
-	
-	'wgCentralAuthLoginIcon' => [
+	'wgCentralAuthLoginWiki' => [
+		'default' => 'loginwiki',
+	],
+	'wgCentralAuthPreventUnattached' => [
+		'default' => true,
+	],
+	'wgCentralAuthSilentLogin' => [
 		'default' => true,
 	],
 
-	'wgCentralAuthSilentLogin' => [
-		'default' =>  true,
-	],
-	'wgCentralAuthAutoCreateWikis' => [
-		'default' => [
-			'sourklou_metawiki',
-		],
-	],
 		// Interwiki //
 	'wgInterwikiCentralDB' => [
 		'default' => 'sourklou_metawiki',
@@ -393,7 +390,13 @@ $wgConf->settings = [
 	'wgMaxShellMemory' => [
 		'default' => 524288,
 	],
-	
+	// CategoryTree
+	'wgCategoryTreeDefaultMode' => [
+		'default' => 0,
+	],
+	'wgCategoryTreeCategoryPageMode' => [
+		'default' => 0,
+	],
 	// Thumbnail prerendering at upload time
 	'wgUploadThumbnailRenderMap' => [
 		'default' => [ 320, 640, 800, 1024, 1280, 1920 ],
