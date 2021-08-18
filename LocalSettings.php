@@ -28,7 +28,25 @@ if ( defined( 'MW_DB' ) ) {
 } elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'commons.vikaspedia.org') {
     $wikiId = 'commonswiki';
 } elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'meta.vikaspedia.org') {
-    $wikiId = 'metawiki';               
+    $wikiId = 'metawiki';   
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'af.vikaspedia.org') {
+    $wikiId = 'afwiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'ar.vikaspedia.org') {
+    $wikiId = 'arwiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'ast.vikaspedia.org') {
+    $wikiId = 'astwiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'bar.vikaspedia.org') {
+    $wikiId = 'barwiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'be.vikaspedia.org') {
+    $wikiId = 'bewiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'bg.vikaspedia.org') {
+    $wikiId = 'bgwiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'bs.vikaspedia.org') {
+    $wikiId = 'bswiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'ca.vikaspedia.org') {
+    $wikiId = 'cawiki';     
+} elseif (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'login.vikaspedia.org') {
+    $wikiId = 'loginwiki';                   
 } else {
     echo 'Unable to determine $wikiId'."\n";
     exit(1);
