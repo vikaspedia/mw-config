@@ -300,6 +300,7 @@ $wgConf->settings = [
 		'default' =>  true,
 	],
 	'wgApplyGlobalBlocks' => [
+                'metawiki' => false,
 		'default' => true,
 		'sourklou_metawiki' => false,
 	],
@@ -313,6 +314,11 @@ $wgConf->settings = [
 	],
 	'wgGlobalUserPageAPIUrl' => [
 		'default' => 'https://meta.vikaspedia.org/api.php',
+	],
+         
+        // Delete
+	'wgDeleteRevisionsLimit' => [
+		'default' => '1000', // databases don't have much memory - let's not overload them in future - set to 1,000 T5287
 	],
 	// TitleBlacklist //
 	'wgBlacklistSettings' => [
@@ -719,3 +725,43 @@ $wgConf->settings = [
 		],
 	],
 ];
+// Vector
+	'wgVectorDefaultSkinVersion' => [
+		'default' => '1',
+	],
+	'wgVectorDefaultSkinVersionForExistingAccounts' => [
+		'default' => '1',
+	],
+	'wgVectorDefaultSkinVersionForNewAccounts' => [
+		'default' => '1',
+	],
+	'wgVectorResponsive' => [
+		'default' => false,
+	],
+	'wgVectorUseWvuiSearch' => [
+		'default' => false,
+	],
+	'wgVectorWvuiSearchOptions' => [
+		'default' => [
+			'showThumbnail' => true,
+			'showDescription' => true,
+		],
+	],	
+
+// Statistics
+	'wgArticleCountMethod' => [
+		'default' => 'link',
+	],
+// ReplaceText
+	'wgReplaceTextResultsLimit' => [
+		'default' => 250,
+	],
+// Page Size
+	'wgMaxArticleSize' => [
+		'default' => 2048,
+	],
+
+	// ParserFunctions
+	'wgPFEnableStringFunctions' => [
+		'default' => false,
+	],
