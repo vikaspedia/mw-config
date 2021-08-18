@@ -596,8 +596,9 @@ $wgConf->settings = [
 				'editfilterhelper',
 				'editfilltermanager' ,
 				'filemover', 
-				'ipblockexempt' ,
-				'accountcreator' ,
+				'ipblockexempt',
+				'accountcreator',
+				'author',
 			],
 		],
 	],
@@ -607,6 +608,29 @@ $wgConf->settings = [
 				'abusefilter-log' => true,
 				'abusefilter-log-detail' => true,
 				'abusefilter-view' => true,
+			],
+			'author' => [
+				'edit' => true,
+				'movefile' => true,
+				'move' => true,
+				'move-subpages' => true,
+				'upload' => true,
+				'reupload' => true,
+				'createpage' => true,
+			],
+			'sysop' => [
+				'edit' => true,
+				'movefile' => true,
+				'move' => true,
+				'move-subpages' => true,
+				'upload' => true,
+				'reupload' => true,
+				'createpage' => true,
+			],
+			'accountcreator' => [
+				'override-antispoof' => true,
+				'noratelimit' => true,
+				'tboverride-account' => true,
 			],
 			'accountcreator' => [
 				'override-antispoof' => true,
@@ -707,7 +731,22 @@ $wgConf->settings = [
 			],
 		],
 	],
-'wgRemoveGroups' => [
+	'wgRevokePermissions' => [
+		'default' => [
+			'*' => [
+				'edit' => true,
+			],
+			'user' => [
+				'edit' => true,
+				'movefile' => true,
+				'move' => true,
+				'move-subpages' => true,
+				'upload' => true,
+				'reupload' => true,
+				'createpage' => true,
+			],
+		],
+	'wgRemoveGroups' => [
 		'default' => [
 			'bureaucrat' => [
 				'bot',
