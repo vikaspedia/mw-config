@@ -65,6 +65,14 @@ $wgConf->settings = [
 		'sourklou_bnwiki'=>'bn',
 		'sourklou_hiwiki'=>'hi',
 		'sourklou_idwiki'=>'id',
+                'sourklou_afwiki' =>'af',
+         'sourklou_arwiki', =>'ar',
+         'sourklou_astwiki', =>'ast',
+         'sourklou_barwiki', =>'bar',
+          'sourklou_bewiki', =>'be',
+         'sourklou_bgwiki', =>'bg',
+          'sourklou_bswiki', =>'bs',
+         'sourklou_cawiki', =>'ca',
 	],
 	'wgScriptPath' => [
 		'default' => '',
@@ -870,7 +878,7 @@ $wgConf->settings = [
 # Shared memory settings
 $wgMainCacheType = CACHE_ACCEL;
 $wgMessageCacheType = CACHE_ACCEL;
-$wgCacheDirectory = 'sourklou_bnwiki';
+$wgCacheDirectory = 'sourklou_bnwiki',sourklou_enwiki;
 $wgUseLocalMessageCache = true;
 $wgParserCacheType = CACHE_DB;
 $wgMemCachedServers = [];
