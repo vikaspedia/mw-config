@@ -66,13 +66,13 @@ $wgConf->settings = [
 		'sourklou_hiwiki'=>'hi',
 		'sourklou_idwiki'=>'id',
                 'sourklou_afwiki' =>'af',
-         'sourklou_arwiki', =>'ar',
-         'sourklou_astwiki', =>'ast',
-         'sourklou_barwiki', =>'bar',
-          'sourklou_bewiki', =>'be',
-         'sourklou_bgwiki', =>'bg',
-          'sourklou_bswiki', =>'bs',
-         'sourklou_cawiki', =>'ca',
+         'sourklou_arwiki' =>'ar',
+         'sourklou_astwiki' =>'ast',
+         'sourklou_barwiki' =>'bar',
+          'sourklou_bewiki' =>'be',
+         'sourklou_bgwiki' =>'bg',
+          'sourklou_bswiki' =>'bs',
+         'sourklou_cawiki' =>'ca',
 	],
 	'wgScriptPath' => [
 		'default' => '',
@@ -113,7 +113,34 @@ $wgConf->settings = [
 		'default' => 'mysql',
 	],
 	
-	
+	// Display Title
+	'wgDisplayTitleHideSubtitle' => [
+		'default' => false,
+	],
+         //Cache
+	'wgCacheDirectory' => [
+		'default' => '/srv/mediawiki/cache',
+	],
+	'wgExtensionEntryPointListFiles' => [
+		'default' => [
+			'/srv/mediawiki/config/extension-list'
+		],
+	],
+	'wgPreprocessorCacheThreshold' => [
+		'default' => false,
+	],
+	'wgResourceLoaderMaxage' => [
+		'default' => [
+			'versioned' => 12 * 60 * 60,
+			'unversioned' => 5 * 60,
+		],
+	],
+	'wgRevisionCacheExpiry' => [
+		'default' => 0,
+	],
+	'wgEnableSidebarCache' => [
+		'default' => false,
+	],
 	# Shared memory settings
 	'wgCacheDirectory' => [
 		'default' => 'cache',
@@ -722,6 +749,43 @@ $wgConf->settings = [
 				'tboverride-account' => true,
 			],
 		],
+                   '+sourklou_metawiki' => [
+			'confirmed' => [
+				'mwoauthproposeconsumer' => true,
+				'mwoauthupdateownconsumer' => true,
+			],
+			'globalsysop' => [
+				'abusefilter-modify-global' => true,
+				'centralauth-lock' => true,
+				'globalblock' => true,
+			],
+			'proxybot' => [
+				'globalblock' => true,
+				'centralauth-lock' => true,
+			],
+			'steward' => [
+				'abusefilter-modify-global' => true,
+				'centralauth-lock' => true,
+				'centralauth-oversight' => true,
+				'centralauth-rename' => true,
+				'centralauth-unmerge' => true,
+				'createwiki' => true,
+				'globalblock' => true,
+				'managewiki' => true,
+				'managewiki-restricted' => true,
+				'noratelimit' => true,
+				'userrights' => true,
+				'userrights-interwiki' => true,
+			],
+			'sysop' => [
+				'interwiki' => true,
+			],
+			'user' => [
+				'requestwiki' => true,
+			],
+			'wikicreator' => [
+				'createwiki' => true,
+			],
 		'+sourklou_enwiki' => [
 			'editfilltermanager' => [
 				'changetags' => true,
@@ -805,6 +869,7 @@ $wgConf->settings = [
 				'suppressionlog' => true,
 				'suppressrevision' => true,
 			],
+                        
 			'checkuser' => [
 				'browsearchive' => true,
 				'deletedhistory' => true,
@@ -875,25 +940,3 @@ $wgConf->settings = [
 ];
 
 
-# Shared memory settings
-$wgMainCacheType = CACHE_ACCEL;
-$wgMessageCacheType = CACHE_ACCEL;
-$wgCacheDirectory = 'sourklou_bnwiki',sourklou_enwiki;
-$wgUseLocalMessageCache = true;
-$wgParserCacheType = CACHE_DB;
-$wgMemCachedServers = [];
-$wgUseGzip = true;
-$wgEnableSidebarCache = true;
-
-# NO DB HITS!
-$wgDisableCounters = true;
-$wgMiserMode = true;
-
-# Text cache
-$wgCompressRevisions = true; // use with care (see talk page)
-$wgRevisionCacheExpiry = 3*24*3600;
-$wgParserCacheExpireTime = 14*24*3600;
-
-# Diffs (defaults seem ok for Ubuntu and others)
-$wgDiff = 'C:/Server/xampp/htdocs/MW/bin/GnuWin32/bin/diff.exe';
-$wgDiff3 = 'C:/Server/xampp/htdocs/MW/bin/GnuWin32/bin/diff3.exe';
