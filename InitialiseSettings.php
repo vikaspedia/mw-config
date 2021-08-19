@@ -347,6 +347,9 @@ $wgConf->settings = [
 	'wgCentralAuthSilentLogin' => [
 		'default' => true,
 	],
+	'wgGlobalRenameBlacklistRegex' => [
+		'default' => true
+	],
 	
 		// Interwiki //
 	'wgInterwikiCentralDB' => [
