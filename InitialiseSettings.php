@@ -394,7 +394,7 @@ $wgConf->settings = [
 	
 		// GlobalUsage //
 	'wgGlobalUsageDatabase' => [
-		'default' => 'sourklou_enwiki',
+		'default' => 'sourklou_commonswiki',
 	],
 	// GlobalUserPage //
 	'wgGlobalUserPageDBname' => [
@@ -865,3 +865,27 @@ $wgConf->settings = [
 		'default' => false,
 	],
 ];
+
+
+# Shared memory settings
+$wgMainCacheType = CACHE_ACCEL;
+$wgMessageCacheType = CACHE_ACCEL;
+$wgCacheDirectory = 'sourklou_bnwiki';
+$wgUseLocalMessageCache = true;
+$wgParserCacheType = CACHE_DB;
+$wgMemCachedServers = [];
+$wgUseGzip = true;
+$wgEnableSidebarCache = true;
+
+# NO DB HITS!
+$wgDisableCounters = true;
+$wgMiserMode = true;
+
+# Text cache
+$wgCompressRevisions = true; // use with care (see talk page)
+$wgRevisionCacheExpiry = 3*24*3600;
+$wgParserCacheExpireTime = 14*24*3600;
+
+# Diffs (defaults seem ok for Ubuntu and others)
+$wgDiff = 'C:/Server/xampp/htdocs/MW/bin/GnuWin32/bin/diff.exe';
+$wgDiff3 = 'C:/Server/xampp/htdocs/MW/bin/GnuWin32/bin/diff3.exe';
