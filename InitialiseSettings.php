@@ -182,6 +182,31 @@ $wgConf->settings = [
 			'default' => 40,
 		],
 	],
+               // Anti-spam
+	'wgAccountCreationThrottle' => [
+		'default' => 5,
+	],
+               // https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:SpamBlacklist#Block_list_syntax
+	'wgBlacklistSettings' => [
+		'default' => [
+			'spam' => [
+				'files' => [
+					'https://meta.miraheze.org/w/index.php?title=Spam_blacklist&action=raw&sb_ver=1',
+				],
+			],
+		],
+	],
+	'wgLogSpamBlacklistHits' => [
+		'default' => false,
+		'sourklou_metawiki' => true,
+	],
+	'wgTitleBlacklistLogHits' => [
+		'default' => false,
+		'sourklou_loginwiki' => true,
+		'sourklou_metawiki' => true,
+	],
+
+           
                // ScratchBlocks
 	'wgScratchBlocks4BlockVersion' => [
 		'default' => 3,
