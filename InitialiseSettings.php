@@ -350,6 +350,9 @@ $wgConf->settings = [
 	'wgGlobalRenameBlacklistRegex' => [
 		'default' => true
 	],
+	'wgGlobalRenameBlacklist' => [
+		'default' => 'https://meta.wikimedia.org/w/index.php?title=Global_rename_blacklist&action=raw'
+	],
 	
 		// Interwiki //
 	'wgInterwikiCentralDB' => [
