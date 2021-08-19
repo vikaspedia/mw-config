@@ -46,7 +46,7 @@ wfLoadExtensions( [
 	'TorBlock',
 	'TitleBlacklist',
 	'TemplateStyles',
-	'UniversalLanguageSelector',
+//	'UniversalLanguageSelector',
 	'UploadWizard',
 	'FontAwesome',
     'MobileFrontend',
