@@ -128,7 +128,80 @@ $wgConf->settings = [
 	'wgUseFileCache' => [
 		'default' => true,
 	],
-	
+	// UniversalLanguageSelector
+	'wgULSAnonCanChangeLanguage' => [
+		'default' => false,
+	],
+	'wgULSLanguageDetection' => [
+		'default' => false,
+	],
+	'wgULSPosition' => [
+		'default' => 'personal',
+	],
+	'wgULSGeoService' => [
+		'wmgUseTranslate' => false,
+		'wmgUseUniversalLanguageSelector' => false,
+	],
+        
+
+	// RelatedArticles
+	'wgRelatedArticlesFooterWhitelistedSkins' => [
+		'default' => [
+			'minerva',
+			'timeless',
+			'vector',
+		],
+	],
+	'wgRelatedArticlesUseCirrusSearch' => [
+		'wmgUseRelatedArticles' => false,
+	],
+        // Description2
+	'wgEnableMetaDescriptionFunctions' => [
+		'wmgUseDescription2' => true,
+	],
+
+	// DismissableSiteNotice
+	'wgDismissableSiteNoticeForAnons' => [
+		'default' => true,
+	],
+         // T3797
+	'wgMaxUploadSize' => [
+		'default' => 262144000,
+	],
+	'wgUploadSizeWarning' => [
+		'default' => 262144000,
+	],
+	'wgAllowCopyUploads' => [
+		'default' => false,
+	],
+	'wgCopyUploadsFromSpecialUpload' => [
+		'default' => false,
+	],
+	'wgGenerateThumbnailOnParse' => [
+		'default' => false,
+	],
+	'wgFileExtensions' => [
+		'default' => [
+			'djvu',
+			'gif',
+			'ico',
+			'jpg',
+			'jpeg',
+			'ogg',
+			'pdf',
+			'png',
+			'svg',
+		],
+	],
+	'wgUseInstantCommons' => [
+		'default' => true,
+	],
+	'wgMaxImageArea' => [
+		'default' => '1.25e7',
+	],
+	'wgMirahezeCommons' => [
+		'default' => true,
+	],
 	
 	# config cache
 	'wgResourceBasePath' => [
