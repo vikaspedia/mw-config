@@ -338,9 +338,6 @@ $wgConf->settings = [
 		'default' => false,
 		'sourklou_metawiki' => true,
 	],
-	'wgCentralAuthLoginWiki' => [
-		'default' => 'sourklou_loginwiki',
-	],
 	'wgCentralAuthPreventUnattached' => [
 		'default' => true,
 	],
