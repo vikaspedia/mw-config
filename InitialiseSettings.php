@@ -535,7 +535,15 @@ $wgConf->settings = [
 	],
 
 	// Scribunto //
-	// Scribunto
+	'wgScribuntoDefaultEngine' => [
+		'default' => 'luastandalone',
+	],
+	'wgScribuntoEngineConf' => [
+		'luastandalone' => [ 'memoryLimit' => 209715200, ],
+	],
+	'wgScribuntoUseGeSHi' => [
+		'default' => true,
+	],
 	'wgCodeEditorEnableCore' => [
 		'default' => true,
 	],
@@ -569,6 +577,9 @@ $wgConf->settings = [
  				'factory' => 'Scribunto_LuaEngine::newAutodetectEngine',
  			],
 		],
+	],
+	'wgPygmentizePath' => [
+		'default' => '/home/sourklou/virtualenv/python/3.8/bin/pygmentize',
 	],
 	
 		// TemplateStyles
