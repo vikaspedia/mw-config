@@ -117,30 +117,7 @@ $wgConf->settings = [
 	'wgDisplayTitleHideSubtitle' => [
 		'default' => false,
 	],
-         //Cache
-	'wgCacheDirectory' => [
-		'default' => '/srv/mediawiki/cache',
-	],
-	'wgExtensionEntryPointListFiles' => [
-		'default' => [
-			'/srv/mediawiki/config/extension-list'
-		],
-	],
-	'wgPreprocessorCacheThreshold' => [
-		'default' => false,
-	],
-	'wgResourceLoaderMaxage' => [
-		'default' => [
-			'versioned' => 12 * 60 * 60,
-			'unversioned' => 5 * 60,
-		],
-	],
-	'wgRevisionCacheExpiry' => [
-		'default' => 0,
-	],
-	'wgEnableSidebarCache' => [
-		'default' => false,
-	],
+         
 	# Shared memory settings
 	'wgCacheDirectory' => [
 		'default' => 'cache',
@@ -749,43 +726,7 @@ $wgConf->settings = [
 				'tboverride-account' => true,
 			],
 		],
-                   '+sourklou_metawiki' => [
-			'confirmed' => [
-				'mwoauthproposeconsumer' => true,
-				'mwoauthupdateownconsumer' => true,
-			],
-			'globalsysop' => [
-				'abusefilter-modify-global' => true,
-				'centralauth-lock' => true,
-				'globalblock' => true,
-			],
-			'proxybot' => [
-				'globalblock' => true,
-				'centralauth-lock' => true,
-			],
-			'steward' => [
-				'abusefilter-modify-global' => true,
-				'centralauth-lock' => true,
-				'centralauth-oversight' => true,
-				'centralauth-rename' => true,
-				'centralauth-unmerge' => true,
-				'createwiki' => true,
-				'globalblock' => true,
-				'managewiki' => true,
-				'managewiki-restricted' => true,
-				'noratelimit' => true,
-				'userrights' => true,
-				'userrights-interwiki' => true,
-			],
-			'sysop' => [
-				'interwiki' => true,
-			],
-			'user' => [
-				'requestwiki' => true,
-			],
-			'wikicreator' => [
-				'createwiki' => true,
-			],
+                   
 		'+sourklou_enwiki' => [
 			'editfilltermanager' => [
 				'changetags' => true,
@@ -938,4 +879,4 @@ $wgConf->settings = [
 		'default' => false,
 	],
 
-
+];
