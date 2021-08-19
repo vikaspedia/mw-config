@@ -937,6 +937,5 @@ $wgConf->settings = [
 	'wgPFEnableStringFunctions' => [
 		'default' => false,
 	],
-];
 
 
