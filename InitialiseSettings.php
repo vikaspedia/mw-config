@@ -75,7 +75,7 @@ $wgConf->settings = [
          'sourklou_cawiki' =>'ca',
 	],
 	'wgScriptPath' => [
-		'default' => '/w',
+		'default' => '',
 	],
 	'wgArticlePath' => [
 		'default' => '/wiki/$1',
