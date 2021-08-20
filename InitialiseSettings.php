@@ -62,7 +62,7 @@ $wgConf->settings = [
 	],
 	'wgLanguageCode' => [
 		'default' => 'en',
-		'sourklou_bnwiki'=>'bn',
+		'sourklou_bnwiki'=>'en',
 		'sourklou_hiwiki'=>'hi',
 		'sourklou_idwiki'=>'id',
                 'sourklou_afwiki' =>'af',
