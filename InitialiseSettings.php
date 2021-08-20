@@ -128,13 +128,13 @@ $wgConf->settings = [
 	'wgUseFileCache' => [
 		'default' => true,
 	],
-	'wgMainCacheType' = [
+	'wgMainCacheType' => [
 		'default' => CACHE_ACCEL,
 	],
-	'wgParserCacheType' = [
+	'wgParserCacheType' => [
 		'default' => CACHE_ACCEL,
 	],
-	'wgMessageCacheType' = [
+	'wgMessageCacheType' => [
 		'default' => CACHE_ACCEL,
 	],
 	// UniversalLanguageSelector
