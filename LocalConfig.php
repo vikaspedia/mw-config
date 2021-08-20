@@ -129,7 +129,7 @@ if ( $wikiId == 'datawiki' ) {
 
 
 } elseif ( $wikiId == 'bnwiki' ) {  
-    $wgSecretKey = $wgSecretKebnwiki;
+    $wgSecretKey = $wgSecretKeybnwiki;
     $wgUpgradeKey = $wgUpgradeKeybnwiki;
     // Wikibase
     $wgEnableWikibaseRepo = false;
