@@ -145,14 +145,7 @@ $wgConf->settings = [
         
 
         // Cache
-	'wgCacheDirectory' => [
-		'default' => '/srv/mediawiki/cache',
-	],
-	'wgExtensionEntryPointListFiles' => [
-		'default' => [
-			'/srv/mediawiki/config/extension-list'
-		],
-	],
+	
 	'wgPreprocessorCacheThreshold' => [
 		'default' => false,
 	],
