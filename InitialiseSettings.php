@@ -356,7 +356,7 @@ $wgConf->settings = [
 	],
 	'wgUploadNavigationUrl' => [
 		'default' => true,
-		'sourklou_commonswiki' => 'https://commons.vikaspedia.org/wiki/Special:UploadWizard',
+		'sourklou_commonswiki' => 'https://commons.vikaspedia.org/Special:UploadWizard?uselang=$lang',
 	],
 	// Recent Changes
 	'wgFeedLimit' => [
