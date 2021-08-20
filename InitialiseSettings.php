@@ -337,26 +337,26 @@ $wgConf->settings = [
 	
 	// Images //
 	'wgSharedUploadBaseUrl' => [
-		'default' => 'https://en.vikaspedia.org',
+		'default' => 'https://commons.vikaspedia.org',
 	],
 	'wgUseSharedUploads' => [
 		'default' => true,
 	],
 	'wgSharedUploadPath' => [
-		'default' => 'https://en.vikaspedia.org/images',
+		'default' => 'https://commons.vikaspedia.org/wiki/Special:UploadWizard',
 	],
 	'wgSharedUploadDBname' => [
-		'default' => 'sourklou_enwiki',
+		'default' => 'sourklou_commonswiki',
 	],
 	'wgSharedUploadDirectory' => [
 		'default' => 'images',
 	],
 	'wgRepositoryBaseUrl' => [
-		'default' => 'https://en.vikaspedia.org/File:',
+		'default' => 'https://commons.vikaspedia.org/File:',
 	],
 	'wgUploadNavigationUrl' => [
 		'default' => true,
-		'sourklou_enwiki' => 'https://en.vikaspedia.org/Special:UploadWizard?uselang=$lang',
+		'sourklou_commonswiki' => 'https://commons.vikaspedia.org/Special:UploadWizard?uselang=$lang',
 	],
 	// Recent Changes
 	'wgFeedLimit' => [
