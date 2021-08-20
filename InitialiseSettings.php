@@ -352,11 +352,11 @@ $wgConf->settings = [
 		'default' => 'images',
 	],
 	'wgRepositoryBaseUrl' => [
-		'default' => 'https://commons.vikaspedia.org/File:',
+		'default' => 'https://commons.vikaspedia.org/wiki/File:',
 	],
 	'wgUploadNavigationUrl' => [
 		'default' => true,
-		'sourklou_commonswiki' => 'https://commons.vikaspedia.org/Special:UploadWizard?uselang=$lang',
+		'sourklou_commonswiki' => 'https://commons.vikaspedia.org/wiki/Special:UploadWizard',
 	],
 	// Recent Changes
 	'wgFeedLimit' => [
