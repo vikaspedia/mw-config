@@ -343,7 +343,7 @@ $wgConf->settings = [
 		'default' => true,
 	],
 	'wgSharedUploadPath' => [
-		'default' => 'https://commons.vikaspedia.org/wiki/images',
+		'default' => 'https://commons.vikaspedia.org/images',
 	],
 	'wgSharedUploadDBname' => [
 		'default' => 'sourklou_commonswiki',
