@@ -144,6 +144,31 @@ $wgConf->settings = [
 	],
         
 
+        // Cache
+	'wgCacheDirectory' => [
+		'default' => '/srv/mediawiki/cache',
+	],
+	'wgExtensionEntryPointListFiles' => [
+		'default' => [
+			'/srv/mediawiki/config/extension-list'
+		],
+	],
+	'wgPreprocessorCacheThreshold' => [
+		'default' => false,
+	],
+	'wgResourceLoaderMaxage' => [
+		'default' => [
+			'versioned' => 12 * 60 * 60,
+			'unversioned' => 5 * 60,
+		],
+	],
+	'wgRevisionCacheExpiry' => [
+		'default' => 0,
+	],
+	'wgEnableSidebarCache' => [
+		'default' => false,
+	],
+
 	// RelatedArticles
 	'wgRelatedArticlesFooterWhitelistedSkins' => [
 		'default' => [
