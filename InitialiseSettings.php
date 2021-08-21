@@ -802,11 +802,11 @@ $wgConf->settings = [
 				'abusefilter-view' => true,
 			],
                         'user' => [
-                              'eadit' => false,  
+                              'edit' => false,  
                             ],
                          
                         'author' => [
-                                  'eadit' => true,
+                                  'edit' => true,
                               ],
 			'accountcreator' => [
 				'override-antispoof' => true,
