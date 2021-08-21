@@ -806,9 +806,7 @@ $wgConf->settings = [
 				'noratelimit' => true,
 				'tboverride-account' => true,
 			],
-		],
-                   
-		'+sourklou_enwiki' => [
+		
 			'editfilltermanager' => [
 				'changetags' => true,
 				'managechangetags' => true,
