@@ -801,6 +801,13 @@ $wgConf->settings = [
 				'abusefilter-log-detail' => true,
 				'abusefilter-view' => true,
 			],
+                        'user' => [
+                              'eadit' => false,  
+                            ],
+                         
+                        'author' => [
+                                  'eadit' => true,
+                              ],
 			'accountcreator' => [
 				'override-antispoof' => true,
 				'noratelimit' => true,
