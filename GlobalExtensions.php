@@ -6,6 +6,10 @@ wfLoadExtensions( [
 //	'CentralNotice',
 	'CharInsert',
 	'Cite',
+        'ContactPage'
+        'JsonConfig'
+        'UserMerge'
+        'Babel'
 	'CiteThisPage',
 	'CirrusSearch',
 	'CodeEditor',
