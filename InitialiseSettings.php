@@ -801,13 +801,7 @@ $wgConf->settings = [
 				'abusefilter-log-detail' => true,
 				'abusefilter-view' => true,
 			],
-                        'user' => [
-                              'edit' => false,  
-                            ],
-                         
-                        'author' => [
-                                  'edit' => true,
-                              ],
+                        
 			'accountcreator' => [
 				'override-antispoof' => true,
 				'noratelimit' => true,
@@ -966,3 +960,9 @@ $wgConf->settings = [
 	],
 
 ];
+
+$wgGroupPermissions['*']['createpage'] = false;
+$wgGroupPermissions['user']['edit'] = false;
+$wgGroupPermissions['user']['createpage'] = false;
+$wgGroupPermissions['writer']['edit'] = true;
+$wgGroupPermissions['writer']['createpage'] = true;
