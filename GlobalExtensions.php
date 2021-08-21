@@ -1,7 +1,7 @@
 <?php // This is DGE //
 wfLoadExtensions( [
 	'AbuseFilter',
-	'CategoryTree',
+//	'CategoryTree',
 	'CentralAuth',
 //	'CentralNotice',
 	'CharInsert',
@@ -27,7 +27,7 @@ wfLoadExtensions( [
 	'Interwiki',
 	'LocalisationUpdate',
 	'MultimediaViewer',
-	'NewUserMessage',
+//	'NewUserMessage',
 	'Nuke',
 	'OATHAuth',
 	'ParserFunctions',
@@ -48,7 +48,7 @@ wfLoadExtensions( [
 	'TemplateStyles',
 	'UniversalLanguageSelector',
 	'UploadWizard',
-	'FontAwesome',
+//	'FontAwesome',
     'MobileFrontend',
 	'WikiEditor',] );
 $wgScribuntoDefaultEngine = 'luastandalone';
