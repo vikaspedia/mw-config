@@ -7,9 +7,9 @@ wfLoadExtensions( [
 	'CharInsert',
 	'Cite',
         'ContactPage'
-        'JsonConfig'
-        'UserMerge'
-        'Babel'
+        'JsonConfig',
+        'UserMerge',
+        'Babel',
 	'CiteThisPage',
 	'CirrusSearch',
 	'CodeEditor',
