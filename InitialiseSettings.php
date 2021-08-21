@@ -960,7 +960,8 @@ $wgConf->settings = [
 	],
 
 ];
-
+$wgGroupPermissions['*']['edit'] = false;
+$wgGroupPermissions['sysop']['edit'] = true;
 $wgGroupPermissions['*']['createpage'] = false;
 $wgGroupPermissions['user']['edit'] = false;
 $wgGroupPermissions['user']['createpage'] = false;
