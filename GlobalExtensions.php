@@ -1,7 +1,7 @@
 <?php // This is DGE //
 wfLoadExtensions( [
 	'AbuseFilter',
-//	'CategoryTree',
+	'CategoryTree',
 	'CentralAuth',
 //	'CentralNotice',
 	'CharInsert',
