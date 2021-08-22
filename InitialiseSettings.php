@@ -990,3 +990,10 @@ $wgContactConfig['default'] = array(
 	'RLModules' => array(),  // Resource loader modules to add to the form display page.
 	'RLStyleModules' => array(),  // Resource loader CSS modules to add to the form display page.
 );
+
+function removeExportSpecial(&$aSpecialPages)
+{
+        unset($aSpecialPages['Export']);
+        return true;
+}
+$wgHooks['SpecialPage_initList'][] = 'removeExportSpecial';
