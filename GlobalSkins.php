@@ -1,10 +1,7 @@
 <?php
 wfLoadSkins( [
-    'Medik',
     'Vector',
-// 'MinervaNeue',
- 'Medik',
-'femiwiki',
+   'femiwiki',
     
 ] );
 // Choose one of these and add chosen code to bottom of LocalSettings.php file:
