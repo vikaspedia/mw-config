@@ -991,11 +991,3 @@ $wgContactConfig['default'] = array(
 	'RLStyleModules' => array(),  // Resource loader CSS modules to add to the form display page.
 );
 
-function removeExportSpecial(&$aSpecialPages)
-{
-        unset($aSpecialPages['Export']);
-        return true;
-}
-$wgHooks['SpecialPage_initList'][] = 'removeExportSpecial';
-
-
