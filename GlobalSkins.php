@@ -4,6 +4,7 @@ wfLoadSkins( [
     'Vector',
 // 'MinervaNeue',
  'Medik',
+'femiwiki',
     
 ] );
 // Choose one of these and add chosen code to bottom of LocalSettings.php file:
@@ -12,4 +13,4 @@ wfLoadSkins( [
 
 
 
-$wgDefaultSkin = 'Medik';
+$wgDefaultSkin = 'femiwiki';
