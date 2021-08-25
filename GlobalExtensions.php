@@ -53,7 +53,7 @@ wfLoadExtensions( [
 	'UniversalLanguageSelector',
 	'UploadWizard',
 //	'FontAwesome',
-    'MobileFrontend',
+//  'MobileFrontend',
 	'WikiEditor',] );
 $wgScribuntoDefaultEngine = 'luastandalone';
 $wgScribuntoUseGeSHi = true;
