@@ -12,4 +12,4 @@ wfLoadSkins( [
 
 
 
-$wgDefaultSkin = 'Vector';
+$wgDefaultSkin = 'Medik';
