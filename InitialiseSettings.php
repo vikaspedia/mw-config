@@ -998,5 +998,4 @@ function removeExportSpecial(&$aSpecialPages)
 }
 $wgHooks['SpecialPage_initList'][] = 'removeExportSpecial';
 
-//Namespace
-$wgNamespacesWithSubpages[NS_প্রবেশদ্বার] = true;
+
